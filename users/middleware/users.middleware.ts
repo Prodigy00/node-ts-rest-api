@@ -1,3 +1,4 @@
+import { log } from 'debug';
 import express from 'express'
 import userService from '../services/users.service'
 

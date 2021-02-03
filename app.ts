@@ -17,6 +17,7 @@ const port: Number = 3002;
 const routes: Array<CommonRoutesConfig> = [];
 const debugLog: debug.IDebugger = debug('app');
 
+app.use(bodyparser.json());
 app.use(cors());
 
 app.use(expressWinston.logger({
